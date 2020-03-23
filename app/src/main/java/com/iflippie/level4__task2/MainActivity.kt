@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun addProduct(playersChoice: Int, computersChoice: Int, result: String) {
+    private fun addGame(playersChoice: Int, computersChoice: Int, result: String) {
             mainScope.launch {
                 val rpsgame = RpsGame(
                     Calendar.getInstance().time,
@@ -140,7 +140,8 @@ class MainActivity : AppCompatActivity() {
     {
         val playersChoice = rps
         val computersChoice = computerRPS()
-        checkResults(playersChoice, computersChoice)
+        val results = checkResults(playersChoice, computersChoice)
+        addGame(playersChoice, computersChoice, results)
     }
     private fun computerRPS(): Int
     {
