@@ -29,13 +29,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-        //supportActionBar?.title = "Shopping List Kotlin"
+        supportActionBar?.title = "Rock,Paper,Scissors!"
 
         gameRepository = GameRepository(this)
         initViews()
         //fab.setOnClickListener { addProduct()}
-        ibPaper.setOnClickListener {buttonRPS(0)}
-        ibRock.setOnClickListener {buttonRPS(1)}
+        ibRock.setOnClickListener {buttonRPS(0)}
+        ibPaper.setOnClickListener {buttonRPS(1)}
         ibScissors.setOnClickListener {buttonRPS(2)}
     }
 
