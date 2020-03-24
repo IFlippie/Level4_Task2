@@ -1,9 +1,7 @@
-package com.iflippie.level4__task2.repositories
+package com.iflippie.level4__task2.database
 
 import android.content.Context
-import com.iflippie.level4__task2.RpsGame
-import com.iflippie.level4__task2.GameListRoomDatabase
-import com.iflippie.level4__task2.dao.RpsDao
+import com.iflippie.level4__task2.model.RpsGame
 
 class GameRepository(context: Context) {
 

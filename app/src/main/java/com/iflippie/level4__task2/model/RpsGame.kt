@@ -1,9 +1,10 @@
-package com.iflippie.level4__task2
+package com.iflippie.level4__task2.model
 
 import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.iflippie.level4__task2.R
 import kotlinx.android.parcel.Parcelize
 import java.util.*
 

@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Level4__Task2</string>
     <string name="action_settings">Settings</string>
+    <string name="result_Tie">Tie</string>
+    <string name="result_Winner">Winner</string>
+    <string name="result_Loser">Loser</string>
+    <string name="result_Nothing">Nothing</string>
+    <string name="title_RPS">Rock,Paper,Scissors!</string>
+    <string name="delete_game_list">Delete Games List</string>
 </resources>

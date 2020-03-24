@@ -1,10 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.iflippie.level4__task2.MainActivity">
+    tools:context="com.iflippie.level4__task2.ui.MainActivity">
     <item
         android:id="@+id/action_delete_shopping_list"
         android:icon="@drawable/ic_delete_white_24dp"
-        android:title="Delete Shopping List"
+        android:title="@string/delete_game_list"
         app:showAsAction="ifRoom" />
 </menu>

@@ -1,4 +1,4 @@
-package com.iflippie.level4__task2
+package com.iflippie.level4__task2.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -8,7 +8,9 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.iflippie.level4__task2.repositories.GameRepository
+import com.iflippie.level4__task2.R
+import com.iflippie.level4__task2.database.GameRepository
+import com.iflippie.level4__task2.model.RpsGame
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -21,7 +23,8 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     private val rpsGameList = arrayListOf<RpsGame>()
-    private val rpsAdapter = RpsAdapter(rpsGameList)
+    private val rpsAdapter =
+        RpsAdapter(rpsGameList)
     private lateinit var gameRepository: GameRepository
     private val mainScope = CoroutineScope(Dispatchers.Main)
 
@@ -29,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-        supportActionBar?.title = "Rock,Paper,Scissors!"
+        supportActionBar?.title = getString(R.string.title_RPS)
 
         gameRepository = GameRepository(this)
         initViews()
@@ -152,21 +155,21 @@ class MainActivity : AppCompatActivity() {
     {
         if (playersChoice == computersChoice)
         {
-            return "Tie"
+            return getString(R.string.result_Tie)
         }
         else if ((playersChoice == 0 && computersChoice == 2) ||
                 (playersChoice == 1 && computersChoice == 0) ||
                 (playersChoice == 2 && computersChoice == 1))
         {
-            return "Winner"
+            return getString(R.string.result_Winner)
         }
         else if ((playersChoice == 0 && computersChoice == 1) ||
                 (playersChoice == 1 && computersChoice == 2) ||
                 (playersChoice == 2 && computersChoice == 0))
         {
-            return "Loser"
+            return getString(R.string.result_Loser)
         }
-        else return "Nothing"
+        else return getString(R.string.result_Nothing)
     }
 
 }

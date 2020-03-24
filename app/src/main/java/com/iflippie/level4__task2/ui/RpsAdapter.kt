@@ -1,9 +1,11 @@
-package com.iflippie.level4__task2
+package com.iflippie.level4__task2.ui
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.iflippie.level4__task2.R
+import com.iflippie.level4__task2.model.RpsGame
 import kotlinx.android.synthetic.main.item_game.view.*
 
 class RpsAdapter(private val rpsGames: List<RpsGame>) : RecyclerView.Adapter<RpsAdapter.ViewHolder>() {

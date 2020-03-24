@@ -1,4 +1,4 @@
-package com.iflippie.level4__task2.dao
+package com.iflippie.level4__task2.database
 
 import androidx.room.TypeConverter
 import java.util.*

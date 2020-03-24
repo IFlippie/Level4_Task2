@@ -1,10 +1,10 @@
-package com.iflippie.level4__task2.dao
+package com.iflippie.level4__task2.database
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
-import com.iflippie.level4__task2.RpsGame
+import com.iflippie.level4__task2.model.RpsGame
 
 @Dao
 interface RpsDao {
